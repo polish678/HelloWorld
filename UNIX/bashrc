@@ -1,0 +1,27 @@
+### My script on the new Mac. Might be modified
+
+echo ""
+echo -n "Welcome to your session, "; whoami 
+echo ""
+echo -n "Today is "; date "+%m-%d-%Y %H:%M:5S"
+echo ""
+cal
+echo ""
+echo ""
+#echo -n "Uptime: "; Uptime
+#echo ""
+
+export HISTSIZE=10000
+export HISTFILESIZE=1000000
+export HISTCONTROL=ignoreboth           # ignoredups:ignorespace
+export HISTIGNORE="history:pwd:exit:df:ls:ls -la:ll"
+
+alias ll='ls -lahG'
+alias home='cd ~'
+alias up='cd ..'
+alias pdw='pwd'
+
+PS1='\$ \! \t ==> '
+
+#supress the notification on Catalina that there is a new default shell
+export BASH_SILENCE_DEPRECATION_WARNING=1
