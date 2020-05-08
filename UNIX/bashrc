@@ -22,3 +22,6 @@ PS1="\e[0:32m\$ \! \t ==>  \e[m "
 
 #Supress the notification that there is a new default shell
 export BASH_SILENCE_DEPRECATION_WARNING=1
+
+#Set Nano as the default editor
+export EDITOR=Nano
